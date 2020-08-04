@@ -1,0 +1,250 @@
+/* navbar */
+    .nav-menu {
+      /*background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));*/
+      background: #fff;
+      padding: 5px;
+      transition: all .7s;
+    }
+
+    .menu-item {
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: color .5s;
+      color: black
+    }
+
+    .menu-item:hover {
+      color: #ff4600;
+    }
+
+    .nav-active {
+      color: #ff4600;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+      background: black;
+      width: 23px;
+      height: 3px;
+      margin: 5px;
+      transition: all .4s;
+    }
+
+    .change .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .line2 {
+      opacity: 0;
+    }
+
+    .change .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .custom-navbar {
+      padding: 5px 30px;
+      background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+    }
+
+
+
+    .home-section {
+  position: relative;
+  z-index: 999;
+    padding-top: 290px;
+    padding-bottom: 225px;
+    background: url(../img/1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.home-section-overlay{
+  width: 100%;
+  background: #252525;
+  opacity: 0.65;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.home-section h1{
+  margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 1px #454545;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.home-section p.hero-text{
+  margin-bottom: 30px;
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+    text-shadow: 1px 1px #656565;
+}
+
+.btn-brown {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #d8996b;
+  border: 2px solid #d8996b;
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+    letter-spacing: 1px;
+  border-radius: 5px 5px;
+  margin: 15px 10px 0 0;
+  padding: 18px 32px;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.vegas-background { height: auto!important; z-index: -1; }
+
+/* -----  Animated Arrow ----- */
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  margin-left:-25px;
+  bottom: 0;
+  margin-bottom: -200px;
+}
+
+.arrow-down i{
+  font-size: 50px;
+  color: #fff;
+}
+
+.arrow-down {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.arrow-down {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+/* ===================================
+   About
+====================================== */
+.main-title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.main-title h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #ff1637;
+}
+.main-title h2 {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #18191d;
+    line-height: 1.2;
+    max-width: 650px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-title p {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.about-3-boxes i {
+    font-size: 50px;
+    color: #18191d;
+    padding: 2rem 0;
+    display: block;
+}
+.hr-line {
+    width: 40px;
+    height: 3px;
+    background: #f1c30f;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.nk-main {
+    position: relative;
+    background-color: #f6f6f6;
+    z-index: 1;
+}
+
+.row.vertical-gap > [class*="col-"] {
+    padding-top: 30px;
+}
+
+.row.vertical-gap {
+    margin-top: -30px;
+}
+
+.nk-img-stretch {
+    width: 100%;
+    height: auto;
+}
+
+.grid-portfolio {
+  padding-top: 100px;
+}
+
+
+.mt-4s {
+  padding-top: 100px;
+}
+
+
+
+#services {
+  background: #ebecfd;
+}
+
+
+@media (min-width: 576px) {
+  .btp { margin-bottom: 20px;}
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
