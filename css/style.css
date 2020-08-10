@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* navbar */
     .nav-menu {
       /*background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));*/
@@ -14,11 +18,11 @@
     }
 
     .menu-item:hover {
-      color: #ff4600;
+      color: #dc3545;
     }
 
     .nav-active {
-      color: #ff4600;
+      color: #dc3545;
     }
 
     .line1,
@@ -74,7 +78,7 @@
   margin-bottom: 15px;
     color: #fff;
     text-shadow: 1px 1px #454545;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Khula', sans-serif;
 }
 
 .home-section p.hero-text{
@@ -92,8 +96,8 @@
   line-height: 22px;
   font-weight: 400;
   color: #fff;
-  background-color: #d8996b;
-  border: 2px solid #d8996b;
+  background-color: #dc3545;
+  border: 2px solid #dc3545;
     box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
     letter-spacing: 1px;
   border-radius: 5px 5px;
@@ -174,7 +178,7 @@
 .hr-line {
     width: 40px;
     height: 3px;
-    background: #f1c30f;
+    background: #dc3545;
     display: block;
     margin: 0 auto;
 }
@@ -227,6 +231,138 @@
 @media (min-width: 576px) {
   .btp { margin-bottom: 20px;}
 }
+
+i {color: #dc3545; font-size: 40px}
+
+ .accordion input[type="radio"] {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .accordion label {
+      display: block;
+      cursor: pointer;
+      background: #dc3545;
+      color: #fff;
+      padding: 20px 55px 20px 25px;
+      position: relative;
+    }
+
+    .accordion label:after {
+      content: '+';
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+    }
+
+    .accordion label:hover {
+      background: red;
+    }
+
+    .accordion .content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 25px;
+    }
+
+    .accord {
+      background: #f4f4f4;
+    }
+
+    .accordion input[type="radio"]:checked ~ .content {
+      max-height: 1000px;
+      border: 1px #dc3545;
+      padding: 25px;
+      transition: padding 0.3s cubic-bezier(0.1, 4.5, 0.8, 1.5);
+    }
+
+    .accordion input[type="radio"]:checked ~ label {
+      background:#dc3545;
+    }
+
+    .accordion input[type="radio"]:checked ~ label:after {
+      content: '-';
+    }
+
+
+.bg-parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-parallax-img,
+.bg-overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-parallax-img {
+  top: -50%;
+  height: 200%;
+  z-index: 1;
+}
+
+.bg-parallax-img > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  max-width: none;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.bg-overlay {
+  top: 0;
+  height: 100%;
+  background-color: #000000;
+  opacity: .5;
+  z-index: 2;
+}
+
+.bg-parallax-content,
+.bg-content {
+  position: relative;
+  z-index: 5;
+}
+
+.img-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.range {
+  color: black;
+  
+}
+
+
+
+    /*Accordion FAQ ENDS*/
 
 
 
